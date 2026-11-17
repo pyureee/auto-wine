@@ -20,3 +20,5 @@ Commands in `/8` Toolbox chat:
 
 - `wine` — show status and the next scheduled check.
 - `wine on` / `wine off` — enable or disable.
+
+Fuck Mystics
