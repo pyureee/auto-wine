@@ -1,0 +1,32 @@
+{
+    "files": {
+        "index.js": "bd7a75bb7177e3f17dd1e8163748c1bb0c25c90e9820cf009ff7d86845bb22d9",
+        "module.json": "304f1ae67bafe04d0a613e11564433011b94d477d6ac72db2628a413fe02856f",
+        "module.config.json": {
+            "hash": "707dc995f35aa31a0ea65c1e8270bcdec8cd75fce6944e6737a145bf4ae7f974",
+            "overwrite": false
+        },
+        "config.json": {
+            "hash": "893bed4e4229881fc64d478076a039e502a1bbb0e4079ebd3fba5a9e33f43e03",
+            "overwrite": false
+        },
+        "settings_migrator.js": "cf3b839856f607f24a79ac12c99cad295b58b368ce3f22e4ce060eb27366d8b1",
+        "README.md": "586e7ec2fdf75db13e98fb58083c49df2f8b4d14b214a19e26d7dd59863a08fb"
+    },
+    "defs": {
+        "C_PLAYER_LOCATION": 5,
+        "S_SPAWN_ME": 3,
+        "S_INSTANT_MOVE": 3,
+        "S_LOAD_TOPO": 3,
+        "C_USE_ITEM": 3,
+        "S_ABNORMALITY_BEGIN": 4,
+        "S_ABNORMALITY_REFRESH": 2,
+        "S_ABNORMALITY_END": 1,
+        "S_START_COOLTIME_ITEM": 1,
+        "S_SPAWN_NPC": 11,
+        "S_BOSS_GAGE_INFO": 3,
+        "S_NPC_STATUS": 2,
+        "S_DESPAWN_NPC": 3,
+        "S_CREATURE_LIFE": 3
+    }
+}

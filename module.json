@@ -1,0 +1,22 @@
+{
+    "name": "auto-wine",
+    "author": "pyuri",
+    "description": "Uses class-appropriate wine in combat, supports ongoing boss fights for Mystics, and refreshes five seconds before buff expiry.",
+    "version": "1.1.0",
+    "keywords": ["network"],
+    "disableAutoUpdate": false,
+    "supportUrl": "https://github.com/pyureee/auto-wine/issues",
+    "options": {
+        "cliName": "Auto Wine",
+        "guiName": "Auto Wine",
+        "reloadable": true,
+        "settingsVersion": 1,
+        "settingsFile": "config.json",
+        "settingsMigrator": "settings_migrator.js"
+    },
+    "dependencies": {
+        "command": "https://raw.githubusercontent.com/tera-private-toolbox/command/master/module.json",
+        "tera-game-state": "https://raw.githubusercontent.com/tera-private-toolbox/tera-game-state/master/module.json"
+    },
+    "servers": ["https://raw.githubusercontent.com/pyureee/auto-wine/main/"]
+}
