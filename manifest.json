@@ -1,7 +1,7 @@
 {
     "files": {
-        "index.js": "bd7a75bb7177e3f17dd1e8163748c1bb0c25c90e9820cf009ff7d86845bb22d9",
-        "module.json": "304f1ae67bafe04d0a613e11564433011b94d477d6ac72db2628a413fe02856f",
+        "index.js": "217afa3a487c5128e87ddd20e560c803f3437b44366c4f93c97e7352c5c49d27",
+        "module.json": "63514d718c2abeda8624116f01328d9b0771ccafa4490e354b94cf3ea9b7fe47",
         "module.config.json": {
             "hash": "707dc995f35aa31a0ea65c1e8270bcdec8cd75fce6944e6737a145bf4ae7f974",
             "overwrite": false
@@ -11,7 +11,7 @@
             "overwrite": false
         },
         "settings_migrator.js": "cf3b839856f607f24a79ac12c99cad295b58b368ce3f22e4ce060eb27366d8b1",
-        "README.md": "82edbf109cc6989bcefc16965b9ab82e7f7724f32ce7b379452d0f00627df27b"
+        "README.md": "8a734a48cbca3fb8ef03ba3aeea39901888e9f3715ee132d46c8b2fa9b8ba1c0"
     },
     "defs": {
         "C_PLAYER_LOCATION": 5,

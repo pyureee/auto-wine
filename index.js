@@ -94,11 +94,9 @@ exports.NetworkMod = function AutoWine(mod) {
         return Object.prototype.hasOwnProperty.call(CLASS_WINE, me.class) ? CLASS_WINE[me.class] : null;
     }
 
-    function wineExpiresAt() {
-        return WINES.reduce((until, wine) => {
-            const buff = me.abnormalities[wine.buffId];
-            return buff ? Math.max(until, Number(buff.until)) : until;
-        }, 0);
+    function wineExpiresAt(wine) {
+        const buff = wine && me.abnormalities[wine.buffId];
+        return buff ? Number(buff.until) : 0;
     }
 
     function findWine(wine) {
@@ -123,7 +121,7 @@ exports.NetworkMod = function AutoWine(mod) {
         if (!wine) return;
 
         const now = Date.now();
-        const refreshAt = wineExpiresAt() - REFRESH_BEFORE_MS;
+        const refreshAt = wineExpiresAt(wine) - REFRESH_BEFORE_MS;
         if (refreshAt > now) {
             scheduleAt(refreshAt);
             return;
@@ -283,7 +281,7 @@ exports.NetworkMod = function AutoWine(mod) {
 
     function status() {
         const wine = selectedWine();
-        const remaining = Math.max(0, Math.ceil((wineExpiresAt() - Date.now()) / 1000));
+        const remaining = Math.max(0, Math.ceil((wineExpiresAt(wine) - Date.now()) / 1000));
         const amount = wine ? inventory.items.reduce((total, item) =>
             total + (item.container === 0 && item.id === wine.itemId ? item.amount : 0), 0) : 0;
         const scheduled = nextCheckAt === null ? 'none' : `${Math.max(0, Math.ceil((nextCheckAt - Date.now()) / 1000))}s`;

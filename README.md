@@ -1,6 +1,7 @@
 Automatically uses the correct wine for your class. Enabled by default.
 
-- **No waste on combat re-entry:** keeps the existing buff until five seconds remain.
+- **No waste on combat re-entry:** keeps the correct wine buff until five seconds remain.
+- **Wrong-wine correction:** uses your class's wine if only the wrong buff is active.
 - **Timed refresh:** refreshes at five seconds remaining; manual wine use updates the timer.
 - **Death recovery:** reapplies a lost buff after resurrection when combat conditions are met.
 - Uses wine from your bag or pockets and respects item cooldowns.
